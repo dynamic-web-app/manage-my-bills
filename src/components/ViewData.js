@@ -15,7 +15,7 @@ export default function ViewData() {
                     "taken": doc.data()["taken"]
                 })
             })
-            setBillDataList(dataList)
+            setBillDataList(dataList) 
         })
     }, [])
     
