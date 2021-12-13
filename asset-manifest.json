@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/manage-my-bills/static/css/main.2bbec030.chunk.css",
+    "main.js": "/manage-my-bills/static/js/main.f89a1dc5.chunk.js",
+    "main.js.map": "/manage-my-bills/static/js/main.f89a1dc5.chunk.js.map",
+    "runtime-main.js": "/manage-my-bills/static/js/runtime-main.a5adaddb.js",
+    "runtime-main.js.map": "/manage-my-bills/static/js/runtime-main.a5adaddb.js.map",
+    "static/css/2.383c0125.chunk.css": "/manage-my-bills/static/css/2.383c0125.chunk.css",
+    "static/js/2.9cf28161.chunk.js": "/manage-my-bills/static/js/2.9cf28161.chunk.js",
+    "static/js/2.9cf28161.chunk.js.map": "/manage-my-bills/static/js/2.9cf28161.chunk.js.map",
+    "static/js/3.739309af.chunk.js": "/manage-my-bills/static/js/3.739309af.chunk.js",
+    "static/js/3.739309af.chunk.js.map": "/manage-my-bills/static/js/3.739309af.chunk.js.map",
+    "index.html": "/manage-my-bills/index.html",
+    "static/css/2.383c0125.chunk.css.map": "/manage-my-bills/static/css/2.383c0125.chunk.css.map",
+    "static/css/main.2bbec030.chunk.css.map": "/manage-my-bills/static/css/main.2bbec030.chunk.css.map",
+    "static/js/2.9cf28161.chunk.js.LICENSE.txt": "/manage-my-bills/static/js/2.9cf28161.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a5adaddb.js",
+    "static/css/2.383c0125.chunk.css",
+    "static/js/2.9cf28161.chunk.js",
+    "static/css/main.2bbec030.chunk.css",
+    "static/js/main.f89a1dc5.chunk.js"
+  ]
+}
