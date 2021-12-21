@@ -7,7 +7,6 @@ import Dashboard from './components/Dashboard';
 import AddData from './components/AddData';
 import CalculateData from './components/CalculateData';
 import ViewData from './components/ViewData';
-
 function App() {
   return (<Router>
     <div className="App">
@@ -31,6 +30,7 @@ function App() {
         <div className="inner">
           <Routes>
             <Route exact path='/' element={<LoginForm/>} />
+            <Route exact path='/manage-my-bills' element={<LoginForm/>} />
             <Route exact path='/dashboard' element={<Dashboard/>} />
             <Route path="/log-in" element={<LoginForm/>} />
             <Route path="/sign-up" element={<SignUpForm/>} />

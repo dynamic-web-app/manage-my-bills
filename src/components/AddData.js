@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 function AddData() {
     const [formDetails, setFormDetails]=useState({
         date:"",
-        taken:0
+        taken:""
     });
     const [option, setOption]=useState(false)
     const [showLitreSelection, setShowLitreSelection] = useState(false)
@@ -27,9 +27,13 @@ function AddData() {
     }
     const handleFormDetailsOnSubmit= (e) =>{
         e.preventDefault()
-        const {date, taken} = formDetails
-        if(date && taken){
-            firebase.firestore().collection("billData").add({
+        var {date, taken} = formDetails
+        if(taken=="" && showLitreSelection==false){
+            taken=0
+        }
+        const newRecord = firebase.firestore().collection('billData').doc(date)
+        if(date){
+            newRecord.set({
                 "date" : date,
                 "taken" : taken
             })
@@ -37,7 +41,7 @@ function AddData() {
                 alert("Data Successfully Submitted");
                 setFormDetails({
                     date:"",
-                    taken:0
+                    taken:""
                 })
                 setShowLitreSelection(false)
             })
@@ -79,8 +83,8 @@ function AddData() {
             <br/>
             {showLitreSelection ? (<div className="form-group">
                 <label>Milk taken</label>
-                <input type="number" className="form-control" name="taken" value={formDetails.taken}  onChange={getFormDetails}/>
-            </div>) : null } <br/>
+                <input type="text" className="form-control" name="taken" value={formDetails.taken}  onChange={getFormDetails}/>
+            </div>) : <input type="text" className="form-control" name="taken" value="0" disabled/> } <br/>
             <button type="submit" className="btn btn-dark btn-sm btn-block">Save</button>&nbsp; &nbsp;
             <Link to="/dashboard"><button type="submit" className="btn btn-dark btn-sm btn-block">Cancel</button></Link>
             </form>
