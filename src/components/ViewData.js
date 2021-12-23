@@ -16,7 +16,7 @@ export default function ViewData() {
     const handleShow = () => setShow(true);
     
     useEffect(() => {
-        let dataList=[]
+        let dataList=[]  
         const ref = firebase.firestore().collection("billData")
         console.log(ref)
         ref.onSnapshot((queryParam)=>{
@@ -51,7 +51,7 @@ export default function ViewData() {
                 taken : taken 
             }) 
             setShow(false)           
-            window.location.reload(true)    
+            // window.location.reload(true)    
         }
     }
     
@@ -61,9 +61,9 @@ export default function ViewData() {
             firebase.firestore().collection("billData")
             .doc(item.date)
             .delete();
-            window.location.reload(true)    
+            // window.location.reload(true)    
         } else {
-            window.location.reload(true)    
+            // window.location.reload(true)    
         }
     }
     const handleUpdateClicked = (item) =>{
