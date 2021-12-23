@@ -8,7 +8,8 @@ import AddData from './components/AddData';
 import CalculateData from './components/CalculateData';
 import ViewData from './components/ViewData';
 function App() {
-  return (<Router>
+  return (
+  <Router>
     <div className="App">
       <nav className="navbar navbar-expand-lg navbar-light fixed-top">
         <div className="container">

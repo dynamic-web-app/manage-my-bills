@@ -49,7 +49,8 @@ export default function ViewData() {
             .update({
                 date:date,
                 taken : taken 
-            })            
+            }) 
+            setShow(false)           
             window.location.reload(true)    
         }
     }
